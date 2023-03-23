@@ -45,14 +45,14 @@ python3 image_optimization.py --optimal_class bus --max_allowed_calls_without_pr
 ```
 
 #### Threat Model 2: Restricted Prompts
-For this task, run the following command once with each desired optimal/target imagenet class. To exactly reproduce the paper results, use the target classes listed in Tables 2 and 3. Change the target class for each run using the `--optimal_class argument`. In the example below we use the target class bus. 
+For this task, run the following command once with each desired optimal/target imagenet class. To exactly reproduce the paper results, use the target classes listed in Tables 2 and 3. Change the target class for each run using the `--optimal_class` argument. In the example below we use the target class bus. 
 
 ```Bash
 python3 image_optimization.py --optimal_class bus --max_allowed_calls_without_progress 1000 --max_n_calls 5000 --seed 0 --exclude_high_similarity_tokens True
 ```
 
 #### Threat Model 3: Restricted Prepending Prompts
-For this task, run the following command once with each desired optimal/target Imagenet class. To exactly reproduce the paper results, use the target classes listed in Tables 2 and 3. Change the target class for each run using the `--optimal_class argument`. In the example below we use the target class "bus". 
+For this task, run the following command once with each desired optimal/target Imagenet class. To exactly reproduce the paper results, use the target classes listed in Tables 2 and 3. Change the target class for each run using the `--optimal_class` argument. In the example below we use the target class "bus". 
 Additionally, for each target class, run once with each of the three versions so of the prepending task. With `--prepend_task_version 1` we optimize prompts prepended to "a picture of a dog", with `--prepend_task_version 2` we optimize prompts prepended to "a picture of a mountain", and with `--prepend_task_version 3` we optimize prompts prepended to "a picture of the ocean". You can modify the dictionary in `utils/constants.py` to add additional prepending task options if desired. 
 
 ```Bash
