@@ -6,13 +6,6 @@ See directions below to run the code and reproduce all results provided in the p
 
 ## Getting Started
 
-### Cloning the Repo (Git Lfs)
-This repository uses git lfs to store larger data files and model checkpoints. Git lfs must be installed before cloning the repository. 
-
-```Bash
-conda install -c conda-forge git-lfs
-```
-
 ### Huggingface Token
 To use the Huggingface models, update `HUGGING_FACE_TOKEN` in `utils/constants.py`.
 
@@ -32,10 +25,13 @@ Additionally, when you create an account you will receive a unique wandb API key
 ## Running the code 
 
 In the paper, we provide prompt optimization results for both image and text generation tasks. The commands below can be used to reproduce all results in the paper. 
-By default all optimization tasks will be run using TuRBO since we found this to be the more successful optimization method. To instead run any task with the Square Attack optimization method, pass in the argument `--square_attack True`. 
 
-### Image generation 
-Here we provide commands to replicate the image generation results for each of the three threat models discussed in Section 3.2. 
+The script to run image optimization is in `scripts/image_optimization.py` and the script to run text optimization is in `run_text_exp.py`.
+
+## Image generation 
+Here we provide commands to replicate the image generation results for each of the three threat models discussed in Section 3.2. By default all optimization tasks will be run using TuRBO since we found this to be the more successful optimization method. 
+
+To instead run any task with the Square Attack optimization method, pass in the argument `--square_attack True`. 
 
 #### Threat Model 1: Unrestricted Prompts
 For this task, run the following command once with each optimal/target imagenet class you'd like to use. Change the target class for each run using the `--optimal_class` argument. In the example below we use the target class "bus". 
@@ -59,24 +55,20 @@ Additionally, for each target class, run once with each of the three versions so
 python3 image_optimization.py --optimal_class bus --max_allowed_calls_without_progress 3000 --max_n_calls 10000 --seed 0 --exclude_high_similarity_tokens True --prepend_task True --prepend_task_version 1
 ```
 
-### Text generation 
-Here we provide commands to replicate the text generation results for each of the two threat models discussed in Section 4. 
-
-#### Threat Model 1: Sentiment Prepending (4.2.1)
-Run the following to optimize prompts that, when prepended to "I am sad", still cause the OPT model to generate text with positive sentiment according to the sentiment classifier. 
-```Bash
-python3 text_optimization.py --loss_type log_prob_pos --seed 0
-```
+## Text generation 
+Here we provide commands to replicate the text generation results. The text generation pipeline is more flexible to allow for custom loss functions and language models.
 
 
-Run the following to optimize prompts that, when prepended to "I am happy", still cause the OPT model to generate text with negative sentiment according to the sentiment classifier. 
-```Bash
-python3 text_optimization.py --loss_type log_prob_neg --seed 0
-```
-
-#### Threat Model 2: Target Characters (4.2.2)
-Run the following to optimize prompts that cause the OPT model to generate text with a large number of occurrences of some target character. The target character can be specified with the `--target_string argument`. In the example command below the target character used is "t". In the paper we provide results for the following target characters: a, e, i, f, t, y, z, q. 
+Run the following to optimize prompts that, when prepended to `Explain list comprehension in Python.`, cause Vicuna 13B-v1.1 to generate text maximizing the log perplexity, aiming to generate nonsensical text.
 
 ```Bash
-python3 text_optimization.py --loss_type target_occurrences --target_string t --seed 0
+python3 run_text_exp.py --loss_type perplexity --seed 0 --language_model vicuna1.1 --embedding_model tinybert --seed_text "Explain list comprehension in Python."
 ```
+### Functionality for Various Language Models
+Here we choose `Vicuna 13B-v1.1`, we provide functionality for `OPT-125M/350M,1.3B,2.7B,6.7B,13B,30B, GPT2, LLaMA-7B/13B/30B, StableLM, Vicuna 13B-v1.1`. It is easy to add your own custom language model to this pipeline. To do so, you can modify `get_language_model` in `scripts/run_text_exp.py` and add your custom language model to `utils/text_utils/language_model.py`.
+
+### Functionality for Various Loss Functions
+Here we choose the perplexity loss, but it is also easy to add your own loss function. We currently implement loss functions `count_letter`, `emotion`, `toxicity`, and `perplexity`. To implement your own loss function, you can modify `get_loss_fn` in `scripts/run_text_exp.py` and add your own loss to `utils/text_utils/text_losses.py`.
+
+### Questions
+For any questions, please contact us at `pchao@wharton.upenn.edu`.

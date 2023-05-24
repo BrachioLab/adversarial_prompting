@@ -1,3 +1,169 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71fd20c2e510854da3c7c0f4da5b4a7384182395d0d11c71b7f5196de21bd08b
-size 12305
+level, level class, lowever level subclasses 
+3, dog, terrier, hound, setter, retriever, pointer, spaniel, Rhodesian-ridgeback, toy-dog, working-dog, corgi, griffon, poodle, spitz, basenji, dalmatian, Great-Pyrenees, Leonberg, Mexican-hairless, Newfoundland, pug, wild-dog
+2, fox, red fox, kit fox, Arctic fox, grey fox
+2, wolf, timber wolf, white wolf, red wolf, coyote
+2, hyena, hyena 
+3, other-canine, fox, wolf, hyena 
+2, domestic-cat, tabby, tiger cat, Persian cat, Siamese cat, Egyptian cat
+2, wildcat, cougar, lynx 
+2, big-cat, leopard, snow leopard, jaguar, lion, tiger, cheetah
+3, feline, domestic-cat, wildcat, big-cat 
+2, bear, American black bear, brown bear, ice bear, sloth bear 
+2, musteline-mammal, weasel, skunk, polecat, otter, mink, black-footed ferret, badger
+2, procyonid, giant panda, lesser panda
+2, viverrine, meerkat, mongoose
+3, other-carnivores, bear, musteline-mammal, procyonid, viverrine
+2, bovid, ox, ibex, bighorn, gazelle, hartebeest, impala, water buffalo, ram, bison
+2, camel, Arabian camel
+2, swine, hog, warthog, wild boar 
+2, hippopotamus, hippopotamus
+2, llama, llama 
+2, equine, sorrel, zebra
+3, ungulate, bovid, camel, swine, hippopotamus, llama, equine
+2, whale, killer whale, grey whale
+2, seal, sea lion
+2, sea-cow, dugong
+3, aquatic-mammal, whale, seal, sea-cow 
+2, great-ape, chimpanzee, gorilla, orangutan
+2, lesser-ape, gibbon, siamang
+2, New-World-monkey, titi, squirrel monkey, spider monkey, marmoset, howler monkey, capuchin
+2, Old-World-monkey, proboscis monkey, patas, macaque, langur, guenon, colobus, baboon
+2, lemur, Madagascar cat, indri
+3, primate, lemur, Old-World-monkey, New-World-monkey, lesser-ape, great-ape
+2, leporid, hare, wood rabbit, Angora
+3, lagomorph, leporid
+2, rodent, fox squirrel, guinea pig, beaver, porcupine, marmot, hamster
+3, rodent, rodent
+2, sloth, three-toed sloth
+2, armadillo, armadillo
+3, edentate, sloth, armadillo
+2, elephant, Indian elephant, African elephant, tusker 
+3, pachyderm, elephant
+2, bony-fish, goldfish, eel, rock beauty, anemone fish, lionfish, puffer, gar, sturgeon 
+2, shark, great white shark, tiger shark, hammerhead
+2, ray, stingray, electric ray
+2, food-fish, barracouta, coho 
+3, fish, bony-fish, shark, ray, food-fish 
+2, aquatic-bird, red-breasted merganser, drake, goose, spoonbill, limpkin, flamingo, crane, bustard, white stork, black stork, American coot, little blue heron, bittern, American egret, oystercatcher, dowitcher, redshank, red-backed sandpiper, ruddy turnstone, king penguin, albatross, pelican, European gallinule, black swan
+2, game-bird, peacock, partridge, quail, black grouse, prairie chicken, ptarmigan, ruffed grouse
+2, oscine, indigo bunting, junco, house finch, goldfinch, brambling, bulbul, robin, magpie, jay, chickadee, water ouzel
+2, bird-of-prey, vulture, great grey owl, kite, bald eagle
+2, cuckoo, coucal
+2, parrot, sulphur-crested cockatoo, lorikeet, macaw, African grey
+2, apodiform-bird, hummingbird
+2, coraciiform-bird, hornbill, bee eater
+2, piciform-bird, toucan, jacamar
+2, ratite, ostrich
+2, rooster, hen, cock 
+3, bird, aquatic-bird, game-bird, oscine, bird-of-prey, cuckoo, parrot, apodiform-bird, coraciiform-bird, piciform-bird, ratite, rooster
+2, dinosaur, triceratops
+2, snake, rock python, boa constrictor, green mamba, Indian cobra, diamondback, sidewinder, horned viper, water snake, vine snake, thunder snake, ringneck snake, night snake, king snake, hognose snake, green snake, garter snake, sea snake
+2, lizard, frilled lizard, agama, alligator lizard, African chameleon, banded gecko, common iguana, American chameleon, green lizard, Komodo dragon, whiptail, Gila monster
+2, crocodilian, American alligator, African crocodile
+2, turtle, loggerhead, leatherback turtle, terrapin, mud turtle, box turtle
+3, reptile, dinosaur, snake, lizard, crocodilian, turtle
+2, frog, bullfrog, tailed frog, tree frog 
+2, salamander, spotted salamander, axolotl, eft, common newt, European fire salamander
+3, amphibian, frog, salamander 
+2, crustacean, American lobster, spiny lobster, rock crab, king crab, fiddler crab, Dungeness crab, hermit crab, crayfish, isopod
+2, beetle, dung beetle, rhinoceros beetle, weevil, tiger beetle, long-horned beetle, leaf beetle, ladybug, ground beetle
+2, butterfly, monarch, admiral, cabbage butterfly, sulphur butterfly, ringlet, lycaenid
+2, insect, mantis, cockroach, fly, leafhopper, cicada, ant, bee, dragonfly, damselfly, grasshopper, cricket, walking stick
+2, arachnid, tick, wolf spider, tarantula, garden spider, black widow, black and gold garden spider, barn spider, scorpion, harvestman
+2, trilobite, trilobite
+2, centipede, centipede
+3, arthropod, centipede, trilobite, arachnid, insect, butterfly, beetle, crustacean 
+2, anthozoan, brain coral, sea anemone  
+2, jellyfish, jellyfish
+2, mollusk, chambered nautilus, snail, slug, sea slug, conch, chiton
+2, echinoderm, starfish, sea urchin, sea cucumber 
+2, worm, nematode, flatworm
+3, non-arthropod-invertebrates, anthozoan, jellyfish, mollusk, echinoderm, worm
+2, flower, yellow lady's slipper, daisy
+2, fungus, agaric, stinkhorn, hen-of-the-woods, gyromitra, earthstar, coral fungus, bolete
+3, plant, flower, fungus
+2, person, groom, ballplayer, scuba diver
+3, person, person
+2, weapon, assault rifle, revolver, rifle, cannon, bow, missile, projectile, guillotine
+2, magnifier, loupe, radio telescope
+2, timepiece-measuring-instrument, wall clock, digital clock, analog clock, hourglass, stopwatch, parking meter, digital watch, sundial
+2, non-timepiece-measuring-instrument, rule, odometer, barometer, scale 
+2, compass, magnetic compass
+2, optical-instrument, sunglasses, projector, binoculars
+2, medical-instrument, stethoscope, syringe
+3, instrument, weapon, magnifier, timepiece-measuring-instrument, non-timepiece-measuring-instrument, compass, optical-instrument, medical-instrument
+2, computer, hand-held computer, laptop, notebook, desktop computer, slide rule, web site, abacus, screen, mouse, hard disc, computer keyboard, typewriter keyboard
+2, power-tool, chain saw, power drill
+2, farm-machine, thresher, harvester
+2, other-machines, slot, vending machine, cash machine
+3, machine, computer, power-tool, farm-machine, other-machines
+2, piano, grand piano, upright
+2, percussion-instrument, steel drum, marimba, maraca, gong, drum, chime
+2, wind-instrument, oboe, bassoon, sax, flute, trombone, French horn, cornet, harmonica, accordion, panpipe, organ, ocarina
+2, stringed-instrument, banjo, violin, cello, harp, electric guitar, acoustic guitar
+3, musical-instrument, piano, percussion-instrument, wind-instrument, stringed-instrument
+2, wheel, potter's wheel, pinwheel, paddlewheel, car wheel, carousel 
+2, control, switch, joystick, remote control
+2, restraint, hair slide, padlock, combination lock, safety pin, screw, nail, knot, buckle, seat belt, muzzle, disk brake
+2, support, maypole, neck brace, tripod, pier 
+2, light, jack-o'-lantern, candle, spotlight, torch, lighter, traffic light
+3, other-devices, light, support, restraint, control, wheel 
+2, van, minivan, police van, moving van
+2, truck, trailer truck, tow truck, pickup, garbage truck, fire engine
+2, motorcycle, moped 
+2, car, sportscar, racer, Model T, minivan, limousine, jeep, convertible, cab, beach wagon, ambulance, golfcart, go-kart, snowplow, recreational vehicle, tractor, forklift
+2, bus, trolleybus, school bus, minibus
+3, motor-vehicle, van, truck, motorcycle, car, bus 
+2, train, electric locomotive, steam locomotive, streetcar, freight car, passenger car, bullet train
+2, tracked-vehicle, tank, snowmobile, half track
+2, cart, oxcart, jinrikisha, horse cart, shopping cart, barrow
+2, bicycle-type, mountain bike, bicycle-built-for-two, unicycle, tricycle
+2, water-vessel, submarine, aircraft carrier, container ship, liner, pirate, wreck, speedboat, lifeboat, canoe, yawl, fireboat, gondola, catamaran, trimaran, schooner 
+2, aircraft, airliner, warplane, balloon, airship, space shuttle
+3, vessel, train, tracked-vehicle, cart, bicycle-type, water-vessel, aircraft
+2, bag, sleeping bag, purse, plastic bag, mailbag, backpack
+2, ball, volleyball, tennis ball, soccer ball, rugby ball, punching bag, ping-pong ball, golf ball, croquet ball, basketball, baseball
+2, camera, reflex camera, Polaroid camera
+2, gymnastic-apparatus, parallel bars, horizontal bar, balance beam
+2, weights, dumbbell, barbell
+2, seat, throne, rocking chair, folding chair, barber chair, studio couch, park bench, toilet seat
+2, furniture, four-poster, crib, cradle, bassinet, medicine chest, china cabinet, chiffonier, table lamp, file, pool table, desk, dining table, entertainment center, wardrobe, bookcase, prayer rug, theater curtain, shower curtain
+2, toiletry, lipstick, face powder, sunscreen, perfume, lotion, hair spray
+2, overgarment, trench coat, lab coat, fur coat, poncho, cardigan, kimono, kimono
+2, necktie, Windsor tie, bow tie, bolo tie
+2, scarf, stole, feather boa
+2, skirt, sarong, overskirt, miniskirt, hoopskirt
+2, swimsuit, swimming trunks, maillot, bikini
+2, headdress, shower cap, mortarboard, bathing cap, sombrero, cowboy hat, bonnet, bearskin, football helmet, crash helmet
+3, clothing, overgarment, necktie, scarf, skirt, swimsuit, headdress
+2, home-appliance, espresso maker, rotisserie, Dutch oven, waffle iron, toaster, microwave, washer, refrigerator, dishwasher, vacuum, sewing machine, iron
+2, building, monastery, palace, yurt, cliff dwelling, mobile home, apiary, boathouse, stupa, mosque, church, barn, home theater, cinema, restaurant, planetarium, library, greenhouse, prison
+2, store, grocery store, toyshop, tobacco shop, shoe shop, confectionery, butcher shop, bookshop, barbershop, bakery
+2, bridge, viaduct, suspension bridge, steel arch bridge
+2, fruit, Granny Smith, strawberry, orange, lemon, pomegranate, pineapple, jackfruit, fig, custard apple, banana
+2, shore, lakeside, seashore 
+2, mountain, alp, volcano 
+2, vegetable, bell pepper, mashed potato, head cabbage, broccoli, cauliflower, spaghetti squash, zucchini, butternut squash, acorn squash, mushroom, cucumber, cardoon, artichoke
+2, meal, cheeseburger, hotdog, plate, consomme, hot pot, burrito, meat loaf, pizza, potpie 
+2, dessert, ice cream, ice lolly, trifle 
+2, spaniel, English springer, Welsh springer spaniel, Irish water spaniel, Brittany spaniel, clumber, cocker spaniel, Sussex spaniel
+2, pointer, German short-haired pointer, vizsla
+2, retriever, flat-coated retriever, curly-coated retriever, golden retriever, Labrador retriever, Chesapeake Bay retriever
+2, setter, English setter, Irish setter, Gordon setter
+2, terrier, Sealyham terrier, Lakeland terrier, Staffordshire bullterrier, American Staffordshire terrier, wire-haired fox terrier, miniature schnauzer, giant schnauzer, standard schnauzer, Airedale, Australian terrier, Bedlington terrier, Border terrier, Boston bull, cairn, Dandie Dinmont, Irish terrier, Kerry blue terrier, Lhasa, Norfolk terrier, Norwich terrier, Scotch terrier, silky terrier, soft-coated wheaten terrier, Tibetan terrier, West Highland white terrier, Yorkshire terrier
+2, hound, black-and-tan coonhound, English foxhound, Walker hound, Italian greyhound, whippet, borzoi, Irish wolfhound, Afghan hound, basset, beagle, bloodhound, bluetick, Ibizan hound, Norwegian elkhound, otterhound, redbone, Saluki, Scottish deerhound, Weimaraner
+2, Rhodesian-ridgeback, Rhodesian ridgeback 
+2, toy-dog, Blenheim spaniel, papillon, Chihuahua, Japanese spaniel, Maltese dog, Pekinese, Shih-Tzu, toy terrier
+2, working-dog, groenendael, malinois, Border collie, Bouvier des Flandres, briard, collie, German shepherd, kelpie, komondor, Old English sheepdog, Rottweiler, Shetland sheepdog, affenpinscher, Doberman, miniature pinscher, kuvasz, schipperke, French bulldog, Tibetan mastiff, Appenzeller, Bernese mountain dog, EntleBucher, Greater Swiss Mountain dog, malamute, Siberian husky, boxer, bull mastiff, Eskimo dog, Great Dane, Saint Bernard
+2, corgi, Cardigan, Pembroke
+2, griffon, Brabancon griffon
+2, poodle, toy poodle, miniature poodle, standard poodle
+2, spitz, Samoyed, Pomeranian, chow, keeshond
+2, basenji, basenji 
+2, dalmatian, dalmatian
+2, Great-Pyrenees, Great Pyrenees
+2, Leonberg, Leonberg
+2, Mexican-hairless, Mexican hairless
+2, Newfoundland, Newfoundland
+2, pug, pug 
+2, wild-dog, dingo, dhole, African hunting dog
